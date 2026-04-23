@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tinkercad Basics Cheat Sheet</title>
+    <meta
+      name="description"
+      content="A responsive quick-reference page to help you learn Tinkercad basics."
+    />
+    <link rel="stylesheet" href="./assets/tinkercad-base.css" />
+    <link rel="stylesheet" href="./assets/tinkercad-cheat-sheet.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="section section-header hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">3D Modeling Quick Reference</p>
+          <h1>Tinkercad Basics</h1>
+          <p class="hero-text">
+            Build from simple shapes, cut with holes, and refine with alignment,
+            duplication, and careful viewing.
+          </p>
+        </div>
+
+        <aside class="hero-note" aria-labelledby="shortcutModeHeading">
+          <p class="note-label" id="shortcutModeHeading">Shortcut mode</p>
+          <p id="shortcutModeText" class="platform-note">
+            Mac shortcuts are showing right now.
+          </p>
+          <div class="toggle-row" role="group" aria-label="Choose shortcut labels">
+            <button class="toggle-button is-active" type="button" data-platform-toggle="mac">
+              Mac
+            </button>
+            <button class="toggle-button" type="button" data-platform-toggle="windows">
+              Windows
+            </button>
+          </div>
+          <p class="note-small">
+            Switch the labels so the shortcuts match the keyboard you are using.
+          </p>
+        </aside>
+      </div>
+    </header>
+
+    <main id="main" class="section section-main">
+      <div class="container">
+        <section class="toolbar-card" aria-labelledby="toolbarHeading">
+          <div class="toolbar-copy">
+            <p class="card-kicker">Toolbar Guide</p>
+            <h2 id="toolbarHeading">Useful Tools You Will See Right Away</h2>
+            <p>
+              Use this toolbar image as a quick reminder of commands that come up constantly while
+              modeling: duplicate, align, group, ungroup, mirror, and dropping objects to the
+              workplane.
+            </p>
+          </div>
+          <figure class="toolbar-figure">
+            <img
+              src="./assets/images/tinkercad-menu.png"
+              alt="Annotated Tinkercad toolbar showing copy, duplicate, undo, group, align, mirror, and related tools."
+            />
+            <figcaption>Keep this nearby while you are combining, aligning, and refining shapes.</figcaption>
+          </figure>
+        </section>
+
+        <section class="section-intro">
+          <div class="intro-panel">
+            <p class="card-kicker">Key Reminder</p>
+            <h2>Build rough, then refine</h2>
+            <p>
+              Start with big simple forms. Get the idea working first, then clean up, center,
+              duplicate, and sharpen the details.
+            </p>
+          </div>
+        </section>
+
+        <section class="cards" aria-label="Tinkercad cheat sheet sections">
+          <article class="card">
+            <p class="card-kicker">Core Idea</p>
+            <h3>Everything starts with simple shapes</h3>
+            <ul>
+              <li>Add with solid shapes.</li>
+              <li>Subtract with holes.</li>
+              <li>Combine parts by grouping.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Shapes</p>
+            <h3>Box, cylinder, sphere</h3>
+            <ul>
+              <li>Resize using corner and side handles.</li>
+              <li>Stretch in different directions.</li>
+              <li>Combine shapes to build more complex objects.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Holes</p>
+            <h3>Turn shapes into cutting tools</h3>
+            <div class="demo-grid demo-grid-two" aria-label="Hole example before and after grouping">
+              <figure class="demo-figure">
+                <img src="./assets/images/hole-in-solid.png" alt="A hole shape placed inside a solid before grouping." />
+                <figcaption>Before grouping: the hole overlaps the solid.</figcaption>
+              </figure>
+              <figure class="demo-figure">
+                <img
+                  src="./assets/images/hole-in-solid-grouped.png"
+                  alt="The solid after grouping with the overlapping hole to cut material away."
+                />
+                <figcaption>After grouping: the overlapping area is removed.</figcaption>
+              </figure>
+            </div>
+            <ol>
+              <li>Place a hole inside a solid.</li>
+              <li>Select both shapes.</li>
+              <li>Click Group.</li>
+            </ol>
+            <p class="result-line"><strong>Result:</strong> the solid is cut.</p>
+            <ul>
+              <li>The shapes must overlap for the cut to work.</li>
+              <li>No overlap means no cut.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Grouping</p>
+            <h3>Make one object from many parts</h3>
+            <div class="card-command-strip" aria-label="Grouping commands">
+              <figure class="inline-tool">
+                <img src="./assets/images/tinkercad-menu-union-group.png" alt="Union Group button" />
+                <figcaption>Union</figcaption>
+              </figure>
+              <figure class="inline-tool inline-tool-tall">
+                <img src="./assets/images/tinkercad-menu-bundle-group.png" alt="Bundle Group button" />
+                <figcaption>Bundle</figcaption>
+              </figure>
+              <figure class="inline-tool inline-tool-tall">
+                <img src="./assets/images/tinkercad-menu-ungroup.png" alt="Ungroup button" />
+                <figcaption>Ungroup</figcaption>
+              </figure>
+            </div>
+            <p>Grouping combines shapes into a single object.</p>
+            <ul>
+              <li><strong>Union:</strong> combines shapes into one solid.</li>
+              <li><strong>Bundle Group:</strong> keeps selected objects together while preserving the individual parts inside the bundle.</li>
+              <li><strong>Intersect:</strong> keeps only the overlap.</li>
+            </ul>
+            <p class="mini-heading">Ungroup</p>
+            <ul>
+              <li>Use Ungroup to undo a group.</li>
+              <li>Helpful for fixing mistakes or adjusting parts.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Align</p>
+            <h3>Make placement precise</h3>
+            <div class="card-command-strip" aria-label="Align command">
+              <figure class="inline-tool">
+                <img src="./assets/images/tinkercad-menu-align.png" alt="Align button" />
+                <figcaption>Align</figcaption>
+              </figure>
+            </div>
+            <figure class="demo-figure">
+              <img src="./assets/images/align.gif" alt="Animated example of aligning shapes in Tinkercad." />
+              <figcaption>Align helps center and line up multiple objects quickly.</figcaption>
+            </figure>
+            <ul>
+              <li>Select multiple shapes.</li>
+              <li>Click Align.</li>
+              <li>Choose the alignment points you want.</li>
+            </ul>
+            <p class="mini-heading">Use it for</p>
+            <ul>
+              <li>Centering objects</li>
+              <li>Creating symmetry</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Duplicate</p>
+            <h3>Repeat shapes quickly</h3>
+            <div class="card-command-strip" aria-label="Duplicate-related commands">
+              <figure class="inline-tool">
+                <img src="./assets/images/tinkercad-menu-duplicate.png" alt="Duplicate button" />
+                <figcaption>Duplicate and Repeat</figcaption>
+              </figure>
+            </div>
+            <figure class="demo-figure">
+              <img src="./assets/images/duplicate-button.gif" alt="Animated example of using the duplicate and repeat button in Tinkercad." />
+              <figcaption>Use the Duplicate and Repeat button to make a copy and repeat the last move.</figcaption>
+            </figure>
+            <ul class="shortcut-list">
+              <li>
+                <span class="shortcut" data-shortcut-mac="Cmd + D" data-shortcut-windows="Ctrl + D"></span>
+                does the same thing as the Duplicate and Repeat button
+              </li>
+              <li>Use the Duplicate and Repeat button when you want the next copy to repeat the same spacing or movement.</li>
+              <li>
+                <span class="shortcut" data-shortcut-mac="Option + drag" data-shortcut-windows="Alt + drag"></span>
+                duplicate without repeat
+              </li>
+            </ul>
+            <p class="mini-heading">Use it for</p>
+            <ul>
+              <li>Repeating elements</li>
+              <li>Symmetry</li>
+              <li>Even spacing</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Scale</p>
+            <h3>Resize with intention</h3>
+            <figure class="demo-figure">
+              <img src="./assets/images/resize.gif" alt="Animated example of resizing a shape in Tinkercad." />
+              <figcaption>Resize by dragging handles to change width, height, and depth.</figcaption>
+            </figure>
+            <ul>
+              <li>Drag corner handles to resize.</li>
+              <li>Adjust width, height, and depth.</li>
+              <li>
+                <span class="shortcut" data-shortcut-mac="Option" data-shortcut-windows="Alt"></span>
+                scales from the center.
+              </li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Move Object</p>
+            <h3>Shift position carefully</h3>
+            <ul>
+              <li>Left click and drag to move an object.</li>
+              <li>Use the arrow keys on the keyboard for more control.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Navigate</p>
+            <h3>Control the camera</h3>
+            <ul class="shortcut-list">
+              <li>Right click + drag: rotate view</li>
+              <li>Scroll wheel: zoom</li>
+              <li>Shift + right click + drag: pan</li>
+            </ul>
+            <p class="mini-heading">Additional tools</p>
+            <ul>
+              <li>Use the view cube to snap to a face.</li>
+              <li>Use the Home button to return to the default view.</li>
+            </ul>
+          </article>
+
+          <article class="card card-wide">
+            <p class="card-kicker">Workflow</p>
+            <h3>How to build</h3>
+            <ol>
+              <li>
+                <strong>Block it out:</strong> use simple shapes first and do not worry about
+                precision yet.
+              </li>
+              <li><strong>Adjust proportions:</strong> scale the form to match your idea.</li>
+              <li><strong>Add details:</strong> use holes and grouping.</li>
+              <li>
+                <strong>Clean up:</strong> align, center, and duplicate for symmetry.
+              </li>
+              <li><strong>Check your work:</strong> rotate and inspect from all angles.</li>
+            </ol>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Common Mistakes</p>
+            <h3>What trips beginners up</h3>
+            <ul>
+              <li>Hole not cutting because shapes are not overlapping</li>
+              <li>Grouping too early</li>
+              <li>Objects slightly off-center</li>
+              <li>Trying to be precise too early</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Strong Models</p>
+            <h3>What good work usually has</h3>
+            <ul>
+              <li>Clean cuts</li>
+              <li>Centered and aligned parts</li>
+              <li>Consistent proportions</li>
+              <li>Built from multiple shapes</li>
+            </ul>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="section section-footer">
+      <div class="container footer-layout">
+        <div class="footer-copy">
+          <p>
+          Tinkercad Basics Cheat Sheet. Focus on simple forms, clean alignment, and patient
+          refinement.
+          </p>
+          <p class="footer-license">
+            Tinkercad Cheatsheet &copy; 2026 by Chris Stein. Except where otherwise noted, this
+            content is licensed under
+            <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em; max-height: 1em; margin-left: 0.2em;" /><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em; max-height: 1em; margin-left: 0.2em;" />.
+          </p>
+          <p class="footer-note">
+            Disclosure: This instructional material was developed with the assistance of
+            generative AI and reviewed and edited by the instructor for course use.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/tinkercad-cheat-sheet.js"></script>
+  </body>
+</html>
