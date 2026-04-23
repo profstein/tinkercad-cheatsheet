@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brightspace Faculty Instructions</title>
+    <meta
+      name="description"
+      content="Instructions for faculty who want to upload the Tinkercad cheatsheet into Brightspace."
+    />
+    <link rel="stylesheet" href="./assets/tinkercad-base.css" />
+    <link rel="stylesheet" href="./assets/tinkercad-cheat-sheet.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="section section-header hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Faculty Guide</p>
+          <h1>Brightspace Setup Instructions</h1>
+          <p class="hero-text">
+            Use this guide to upload the cheat-sheet images into your Brightspace course files,
+            replace `_img-folder-path_`, and paste the Brightspace HTML into a content page.
+          </p>
+        </div>
+
+        <aside class="hero-note">
+          <p class="note-label">Best Starting Point</p>
+          <p class="platform-note">
+            Use the Brightspace HTML file with inline CSS, not the regular public web page.
+          </p>
+          <p class="note-small">
+            This page mirrors the Markdown instructions, but is easier to link on the public web.
+          </p>
+        </aside>
+      </div>
+    </header>
+
+    <main id="main" class="section section-main">
+      <div class="container">
+        <section class="section-intro">
+          <div class="intro-panel">
+            <p class="card-kicker">What You Need</p>
+            <h2>Gather the HTML file, the images, and your Brightspace course</h2>
+            <ul>
+              <li>The Brightspace HTML file you want to use</li>
+              <li>The images from `assets/images`</li>
+              <li>Access to `Tools &gt; Course Admin &gt; Manage Files` in Brightspace</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cards" aria-label="Brightspace faculty instructions">
+          <article class="card card-wide">
+            <p class="card-kicker">Setup Steps</p>
+            <h3>How to prepare the Brightspace version</h3>
+            <ol>
+              <li>Download the images in `assets &gt; images`.</li>
+              <li>Log in to your Brightspace course.</li>
+              <li>Go to `Tools &gt; Course Admin`.</li>
+              <li>Click `Manage Files`.</li>
+              <li>Create a new folder, or use an existing folder structure you already have.</li>
+              <li>Click `Upload`.</li>
+              <li>Copy the path shown in the Upload dialog box under `Destination Folder`.</li>
+              <li>Upload all of the images from step 1 and click `Save`.</li>
+              <li>Open `tinkercad-cheat-sheet-brightspace.html`.</li>
+              <li>Do a find and replace on `_img-folder-path_`.</li>
+              <li>Replace it with the full Brightspace folder path from step 7.</li>
+              <li>Keep the trailing slash at the end of the folder path.</li>
+              <li>Copy the HTML from the file.</li>
+              <li>In Brightspace, open the page, module, or content item where you want to place the cheat sheet.</li>
+              <li>Switch to the HTML source editor.</li>
+              <li>If needed, click the three dots `...` and then click the `&lt;/&gt;` icon.</li>
+              <li>Paste the HTML.</li>
+              <li>Click `Update` to save changes.</li>
+            </ol>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Template File</p>
+            <h3>Reusable Brightspace HTML</h3>
+            <p>
+              Use the reusable template if you want one version that can work across different
+              Brightspace course shells.
+            </p>
+            <p><a href="./tinkercad-cheat-sheet-brightspace.html">Open the Brightspace template</a></p>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Example Replacement</p>
+            <h3>Replace the image path placeholder</h3>
+            <p>Make sure you copy the trailing slash at the end of the Brightspace folder path.</p>
+            <p class="result-line"><code>_img-folder-path_imagename.png</code></p>
+            <p>Replace it with something like:</p>
+            <p class="result-line"><code>/content/enforced/COURSE-ID/3d/cheatsheet images/imagename.png</code></p>
+          </article>
+
+          <article class="card">
+            <p class="card-kicker">Notes</p>
+            <h3>Things to watch for</h3>
+            <ul>
+              <li>Each course has a different Brightspace course ID.</li>
+              <li>The image-folder portion needs to change for each section.</li>
+              <li>Use the Brightspace version of the HTML, not the public web version.</li>
+              <li>The Brightspace HTML uses inline CSS because Brightspace may strip embedded styles.</li>
+            </ul>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="section section-footer">
+      <div class="container footer-layout">
+        <div class="footer-copy">
+          <p>Brightspace setup support for the Tinkercad Cheatsheet project.</p>
+          <p class="footer-note">
+            This page is for faculty and course builders who want to reuse the student-facing
+            Tinkercad resource inside Brightspace.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
